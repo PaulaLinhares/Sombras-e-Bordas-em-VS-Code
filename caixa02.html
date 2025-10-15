@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupin Tags</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(90, 82, 82);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgb(56, 56, 56);
+        }
+        nav > a {
+            text-decoration: none; /* sem sublinhado*/
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        main > section {
+            background-color: rgb(248, 235, 192);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 30px 40px;
+        } /* Ideal para configurar bordas */
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p { 
+            margin: 0px; 
+        }
+            /*Abrir Devtools para verificar margens das caixas. Abrir navegador>três pontinhos>mais ferramentas>ferramentas do desenvolvedor*/
+            
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(175, 165, 165);
+        }
+        h1{
+            text-align: center;
+            box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.829)
+            
+        } /* O "inset" depois de box-shadow insere sombra interna*/
+    div#bola{
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <header> <!-- cabeçalho-->
+<h1>Meu Site</h1>
+<nav> <!-- adicionar links-->
+<a href="#">início</a>
+<a href="#">produtos</a>
+<a href="#">novidades</a>
+<a href="#">suporte</a> <!-- os links estão vazios, tendo que ser subtituídos pelos caminhos-->
+</nav>
+    </header><!-- cabeçalho -->
+    <main>
+<section id="assuntos">
+<p>Esportes Política e Tecnologia</p>
+</section>
+<section id="notícias">
+<article>
+    <h2>Nóticias sobre o Brasil</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum expedita distinctio debitis natus ducimus, maiores adipisci rem explicabo at vel magni, porro ipsa odio veritatis, officiis eveniet ea ratione dignissimos.</p>
+<aside>
+    <p>Artigo escrito por José da Silva Costa</p>
+</aside>
+</article>
+<article>
+
+</article>
+</section>
+    </main> <!-- corpo/ código principal-->
+    <footer> <!-- rodapé-->
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
